@@ -1,0 +1,189 @@
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url('../../assets/images/bg.png') repeat;
+}
+
+nav {
+  position: absolute;
+  width: 640px;
+  height: 300px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.logo {
+  position: relative;
+  height: 325px;
+  width: 330px;
+}
+
+nav svg path {
+  transition: all 0.3s ease-in-out;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+object {
+  width: 100%;
+  height: 390px;
+}
+
+.logo_word {
+  position: absolute;
+  width: 320px;
+  height: 138px;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+.w1,
+.w2,
+.w3 {
+  position: absolute;
+  display: block;
+  bottom: 0;
+}
+
+.logo_word a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.w1 {
+  width: 85px;
+  height: 135px;
+  right: 235px;
+}
+
+.w2 {
+  width: 109px;
+  height: 135px;
+  right: 114px;
+}
+
+.w3 {
+  width: 108px;
+  height: 135px;
+  right: 0;
+}
+
+.logo_word svg path {
+  fill: #2b2b2b;
+}
+
+.logo_word .w1:hover svg path,
+nav.active1 .w1 svg path {
+  fill: #e74c3c;
+}
+
+.logo_word .w2:hover svg path,
+nav.active2 .w2 svg path {
+  fill: #27ae60;
+}
+
+.logo_word .w3:hover svg path,
+nav.active3 .w3 svg path {
+  fill: #2980b9;
+}
+
+.logo .el1 {
+  transform: translate(38px,45px);
+  fill: #2b2b2b;
+}
+
+.logo .el2 {
+  transform: translate(37px,37px);
+  fill: #2b2b2b;
+}
+
+.logo .el3 {
+  transform: translate(39px,40px);
+  fill: #2b2b2b;
+}
+
+nav.active1 .el1 {
+  transform: translate(0,0);
+  fill: #2b2b2b;
+}
+
+nav.active2 .el2 {
+  transform: translate(64px,6px);
+  fill: #2b2b2b;
+}
+
+nav.active3 .el3 {
+  transform: translate(26px,65px);
+  fill: #2b2b2b;
+}
+
+.logo .el4 {
+  transform: translate(35px,37px);
+  fill: #2b2b2b;
+}
+
+#logo_bottom_text,
+#logo_right_text,
+#logo_top_text {
+  position: absolute;
+  font: 700 23pt/23pt 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  width: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+#logo_top_text {
+  color: #e74c3c;
+  text-align: right;
+  top: 8%;
+  right: 97%;
+  transform-origin: 100% 50%;
+  width: 200px;
+  opacity: 0;
+}
+
+nav.active1 #logo_top_text {
+  opacity: 1;
+  transform: rotate(38deg);
+}
+
+#logo_right_text {
+  color: #27ae60;
+  top: 9%;
+  left: 96%;
+  width: 200px;
+  transform-origin: 0 50%;
+  opacity: 0;
+}
+
+nav.active2 #logo_right_text {
+  opacity: 1;
+  transform: rotate(-39deg);
+}
+
+#logo_bottom_text {
+  color: #2980b9;
+  bottom: -10%;
+  left: -24%;
+  width: 200px;
+  transform-origin: 100% 50%;
+  text-align: right;
+  opacity: 0;
+}
+
+nav.active3 #logo_bottom_text {
+  opacity: 1;
+  transform: rotate(-69deg);
+}

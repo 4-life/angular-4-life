@@ -1,0 +1,78 @@
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'PT Sans';
+  src: url('assets/fonts/PTS55F_W.eot') format('embedded-opentype'), url('assets/fonts/PTS55F_W.woff') format('woff'), url('assets/fonts/PTS55F_W.ttf') format('truetype'), url('assets/fonts/PTS55F_W.svg#PTSans-Regular') format('svg');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  src: url('assets/fonts/PTS56F_W.eot') format('embedded-opentype'), url('assets/fonts/PTS56F_W.woff') format('woff'), url('assets/fonts/PTS56F_W.ttf') format('truetype'), url('assets/fonts/PTS56F_W.svg#PTSans-Italic') format('svg');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: url('assets/fonts/PTS75F_W.eot') format('embedded-opentype'), url('assets/fonts/PTS75F_W.woff') format('woff'), url('assets/fonts/PTS75F_W.ttf') format('truetype'), url('assets/fonts/PTS75F_W.svg#PTSans-Bold') format('svg');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: bold;
+  src: url('assets/fonts/PTS76F_W.eot') format('embedded-opentype'), url('assets/fonts/PTS76F_W.woff') format('woff'), url('assets/fonts/PTS76F_W.ttf') format('truetype'), url('assets/fonts/PTS76F_W.svg#PTSans-BoldItalic') format('svg');
+}
+
+::selection {
+  background: #ea4c88;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #ea4c88;
+  color: #fff;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: #e74c3c;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #e74c3c;
+}
+
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font: normal 12pt/12pt 'PT Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: #ea4c88;
+}
